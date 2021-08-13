@@ -1,0 +1,31 @@
+#top-bar-menu {
+    background-color: aquamarine;
+    display: inline-block;
+    width: 100%;
+}
+
+#main-website-title {
+    display: inline;
+}
+
+#top-bar-menu button {
+    float: right;
+    padding: 15px;
+    margin: 15px;
+}
+
+#create-profile {
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: rebeccapurple;
+}
+
+#add-availability {
+    display: none;
+}
+
+#map-area {
+    position: absolute;
+}
