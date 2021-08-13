@@ -17,9 +17,10 @@
 #create-profile {
     display: none;
     position: absolute;
-    width: 50%;
-    height: 50%;
     background-color: rebeccapurple;
+    margin-left: 50%;
+    margin-right: 50%;
+    border: 5px solid red;
 }
 
 #add-availability {
@@ -28,4 +29,8 @@
 
 #map-area {
     position: absolute;
+}
+
+#main-page {
+    position: relative;
 }
