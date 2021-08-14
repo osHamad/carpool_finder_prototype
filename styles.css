@@ -1,27 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
 #top-bar-menu {
-    background-color: aquamarine;
+    background-color: rgb(45, 49, 66);
     display: inline-block;
     width: 100%;
 }
 
 #main-website-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
     display: inline;
     margin: 25px;
+    line-height: 80px;
 }
 
 #top-bar-menu button {
     float: right;
     padding: 15px;
     margin: 15px;
+    background-color: rgb(79, 93, 117);
+    border-radius: 5px;
+    border: 0;
+    font-size: 120%;
+    width: 10%;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #add-driver-availability {
+    font-family: Arial, Helvetica, sans-serif;
     display: none;
     position: absolute;
-    background-color: rebeccapurple;
-    margin-left: 50%;
-    margin-right: 50%;
-    border: 5px solid red;
+    background-color: rgb(191, 192, 192);
+    width: 33%;
+    margin-left: 33%;
+    margin-right: 33%;
+    border: 2px solid rgb(45, 49, 66);
+    border-radius: 5px;
+    font-size: 150%;
+    padding: 20px;
+}
+
+#add-driver-availability button {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(79, 93, 117);
+    border-radius: 5px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#add-driver-availability label, h1 {
+    color: rgb(255, 255, 255);
 }
 
 #add-passenger-availability {
@@ -41,20 +77,24 @@
 #passengers-and-drivers {
     display:inline;
     float: right;
-    border: 2px solid red;
+    background-color: rgb(45, 49, 66);
     width: 45%;
 }
 
-.passenger-available {
-    background-color: lightblue;
+.passenger-available, .driver-available {
+    background-color: rgb(239, 131, 84);
     padding: 10px;
     margin: 5px;
 }
 
-.driver-available {
-    background-color: lightcoral;
-    padding: 10px;
-    margin: 5px;
+.passenger-available h1, .driver-available h1 {
+    color: rgb(45, 49, 66);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.passenger-available p, .driver-available p {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .name-and-status {
