@@ -9,9 +9,9 @@
 </head>
 <body>
     <div id="top-bar-menu">
-        <h1 id="main-website-title">page title</h1>
-        <button id="create-profile-button">Create Profile</button>
-        <button id="add-availability-button">Add Availability</button>
+        <h1 id="main-website-title">Carpool Finder</h1>
+        <button class="top-bar-menu-button">Driver</button>
+        <button class="top-bar-menu-button">Passenger</button>
     </div>
 
     <div id="main-page">
@@ -19,15 +19,46 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359539.2054409518!2d-76.08044082331413!3d45.24981402758555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1628889630453!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
-        <div style="float: right;">
-            <h1>availability1: driver</h1>
-            <h1>availability2: passenger</h1>
-            <h1>availability3: driver</h1>
+        <div id="passengers-and-drivers">
+            <div class="driver-available">
+                <h1 class="name-and-status">Driver: </h1>
+                <h1 class="name-and-status">John</h1>
+                <p>Toronto, Ontario</p>
+                <p>5:30pm</p>
+            </div>
+    
+            <div class="passenger-available">
+                <h1 class="name-and-status">Passenger: </h1>
+                <h1 class="name-and-status">Robert</h1>
+                <p>Ottawa, Ontario</p>
+                <p>10:00am</p>
+            </div>
+
+            <div class="passenger-available">
+                <h1 class="name-and-status">Passenger: </h1>
+                <h1 class="name-and-status">Robert</h1>
+                <p>Ottawa, Ontario</p>
+                <p>10:00am</p>
+            </div>
+
+            <div class="passenger-available">
+                <h1 class="name-and-status">Passenger: </h1>
+                <h1 class="name-and-status">Robert</h1>
+                <p>Ottawa, Ontario</p>
+                <p>10:00am</p>
+            </div>
+
+            <div class="passenger-available">
+                <h1 class="name-and-status">Passenger: </h1>
+                <h1 class="name-and-status">Robert</h1>
+                <p>Ottawa, Ontario</p>
+                <p>10:00am</p>
+            </div>
         </div>
 
-        <div id="create-profile">
+        <div id="add-driver-availability">
             <h1>Create Profile</h1>
-            <form action="/api/contacts" method="POST">
+            <form action="/api" method="POST">
                 <label for="first-name">First Name: </label>
                 <input type="text" id="first-name" name="first-name"><br>
                 <label for="age">Age: </label>
@@ -45,7 +76,7 @@
     </div>
 
 
-    <div id="add-availability">
+    <div id="add-passenger-availability">
         <h1>hello world</h1>
     </div>
 
