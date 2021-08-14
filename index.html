@@ -10,8 +10,8 @@
 <body>
     <div id="top-bar-menu">
         <h1 id="main-website-title">Carpool Finder</h1>
-        <button class="top-bar-menu-button">Driver</button>
-        <button class="top-bar-menu-button">Passenger</button>
+        <button id="add-driver-button">Driver</button>
+        <button id="add-passenger-button">Passenger</button>
     </div>
 
     <div id="main-page">
@@ -58,17 +58,15 @@
 
         <div id="add-driver-availability">
             <h1>Create Profile</h1>
-            <form action="/api" method="POST">
-                <label for="first-name">First Name: </label>
-                <input type="text" id="first-name" name="first-name"><br>
-                <label for="age">Age: </label>
-                <input type="text" id="age" name="age"><br>
-                <label for="gender">Gender: </label>
-                <input type="text" id="gender" name="gender"><br>
+            <form action="http://localhost:3000/api/contacts" method="POST">
+                <label for="name">First Name: </label>
+                <input type="text" id="name" name="name"><br>
                 <label for="city">City: </label>
                 <input type="text" id="city" name="city"><br>
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email"><br>
+                <label for="time">Time Available</label>
+                <input type="text" id="time" name="time"><br>
     
                 <input type="submit" value="Create">
             </form>
