@@ -19,9 +19,9 @@ exports.index = function (req, res) {
 exports.new = function (req, res) {
     var contact = new Contact();
     contact.name = req.body.name ? req.body.name : contact.name;
-    contact.gender = req.body.gender;
     contact.email = req.body.email;
-    contact.phone = req.body.phone;
+    contact.city = req.body.city;
+    contact.time = req.body.time;
 // save the contact and check for errors
     contact.save(function (err) { 
         if (err)

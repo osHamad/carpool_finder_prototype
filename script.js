@@ -1,9 +1,9 @@
-document.getElementById('create-profile-button').addEventListener('click', function hello() {
-    let createProfilePage = document.getElementById('create-profile')
+document.getElementById('add-driver-button').addEventListener('click', function hello() {
+    let createProfilePage = document.getElementById('add-driver-availability')
     createProfilePage.style.display = 'Block'
 })
 
-document.getElementById('add-availability-button').addEventListener('click', function hello() {
-    let createProfilePage = document.getElementById('add-availability')
+document.getElementById('add-passenger-button').addEventListener('click', function hello() {
+    let createProfilePage = document.getElementById('add-passenger-availability')
     createProfilePage.style.display = 'Block'
 })
