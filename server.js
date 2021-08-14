@@ -36,7 +36,8 @@ app.listen(3000, function () {
     console.log("Running RestHub on port 3000");
 });
 
-app.post("/api/contacts", function (req, res) {
+app.post("/api", function (req, res) {
+    console.log(req.body.user)
     console.log(req.body.user.name)
 });
 
