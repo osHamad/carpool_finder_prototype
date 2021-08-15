@@ -16,67 +16,57 @@
 
     <div id="main-page">
         <div id="map-area">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359539.2054409518!2d-76.08044082331413!3d45.24981402758555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1628889630453!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359539.2054409518!2d-76.08044082331413!3d45.24981402758555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1628889630453!5m2!1sen!2sca" width="800" height="650" allowfullscreen="false" loading="lazy"></iframe>
         </div>
 
         <div id="passengers-and-drivers">
             <div class="driver-available">
                 <h1 class="name-and-status">Driver: </h1>
                 <h1 class="name-and-status">John</h1>
-                <p>Toronto, Ontario</p>
+                <p>Toronto</p>
                 <p>5:30pm</p>
+                <button class="contact-button">Contact</button>
             </div>
     
             <div class="passenger-available">
                 <h1 class="name-and-status">Passenger: </h1>
                 <h1 class="name-and-status">Robert</h1>
-                <p>Ottawa, Ontario</p>
+                <p>Ottawa</p>
                 <p>10:00am</p>
-            </div>
-
-            <div class="passenger-available">
-                <h1 class="name-and-status">Passenger: </h1>
-                <h1 class="name-and-status">Robert</h1>
-                <p>Ottawa, Ontario</p>
-                <p>10:00am</p>
-            </div>
-
-            <div class="passenger-available">
-                <h1 class="name-and-status">Passenger: </h1>
-                <h1 class="name-and-status">Robert</h1>
-                <p>Ottawa, Ontario</p>
-                <p>10:00am</p>
-            </div>
-
-            <div class="passenger-available">
-                <h1 class="name-and-status">Passenger: </h1>
-                <h1 class="name-and-status">Robert</h1>
-                <p>Ottawa, Ontario</p>
-                <p>10:00am</p>
+                <button class="contact-button">Contact</button>
             </div>
         </div>
 
         <div id="add-driver-availability">
-            <h1>Add As A Driver</h1>
-            <button id="back-from-driver-page">Back</button>
-            <form target="_blank" action="http://localhost:3000/api" method="POST">
-                <label for="name">First Name </label>
-                <input type="text" id="name" name="name"><br>
-                <label for="city">City </label>
-                <input type="text" id="city" name="city"><br> 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email"><br>
-                <label for="time">Time Available</label>
-                <input type="text" id="time" name="time"><br>
-    
-                <button type="submit">Submit</button>
-            </form>
+            <h1>Add Driver</h1>
+            <button id="back-from-driver-page">Back</button><br><br><br>
+            <span>First Name</span>
+            <input type="text" id="dname"><br>
+            <span>City</span>
+            <input type="text" id="dcity"><br>
+            <span>Email</span>
+            <input type="email" id="demail"><br>
+            <span>Time Available</span>
+            <input type="text" id="dtime"><br>
+
+            <button id="driver-submit">Submit</button>
         </div>
     </div>
 
 
     <div id="add-passenger-availability">
-        <h1>hello world</h1>
+        <h1>Add Passenger</h1>
+            <button id="back-from-passenger-page">Back</button><br><br><br>
+            <span>First Name</span>
+            <input type="text" id="pname"><br>
+            <span>City</span>
+            <input type="text" id="pcity"><br>
+            <span>Email</span>
+            <input type="text" id="pemail"><br>
+            <span>Time Available</span>
+            <input type="text" id="ptime"><br>
+
+            <button id="passenger-submit">Submit</button>
     </div>
 
     <script src="script.js"></script>

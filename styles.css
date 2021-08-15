@@ -6,7 +6,8 @@ body {
 
 #top-bar-menu {
     background-color: rgb(45, 49, 66);
-    display: inline-block;
+    position: fixed;
+    z-index: 500;
     width: 100%;
 }
 
@@ -31,21 +32,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#add-driver-availability {
+#add-driver-availability, #add-passenger-availability {
     font-family: Arial, Helvetica, sans-serif;
     display: none;
     position: absolute;
     background-color: rgb(191, 192, 192);
-    width: 33%;
     margin-left: 33%;
     margin-right: 33%;
     border: 2px solid rgb(45, 49, 66);
     border-radius: 5px;
     font-size: 150%;
     padding: 20px;
+    color: rgb(255, 255, 255);
 }
 
-#add-driver-availability button {
+#add-driver-availability {
+    width: 33%;
+    margin-left: 33%;
+    margin-right: 33%;
+    z-index: 700;
+} 
+
+#add-passenger-availability {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    z-index: 700;
+}
+
+#add-driver-availability button, #add-passenger-availability button {
     margin: 10px;
     padding: 10px;
     background-color: rgb(79, 93, 117);
@@ -53,32 +68,41 @@ body {
     border: 0;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+}
+
+#add-driver-availability input, #add-passenger-availability input {
+    background-color: rgba(45, 49, 66, .2);
+    border: 0;
+    border-radius: 5px;
 }
 
 
-#add-driver-availability label, h1 {
-    color: rgb(255, 255, 255);
-}
-
-#add-passenger-availability {
-    display: none;
+#add-driver-availability h1, span, #add-passenger-availability h1, span {
+    margin: 15px;
+    padding: 5px;
+    display: inline;
 }
 
 #map-area {
     position: fixed;
+    border: 0;
+    margin: 85px 5px 5px 5px;
 }
 
 #main-page {
     position: relative;
 }
 
-
-
 #passengers-and-drivers {
     display:inline;
     float: right;
     background-color: rgb(45, 49, 66);
     width: 45%;
+    padding: 10px;
+    margin: 85px 5px 5px 5px;
+    z-index: 400;
+    position:relative;
 }
 
 .passenger-available, .driver-available {
@@ -100,4 +124,15 @@ body {
 .name-and-status {
     display: inline;
     margin: 10px;
+}
+
+.contact-button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(79, 93, 117);
+    border-radius: 5px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    width: 100px;
+    height: 50px;
 }
